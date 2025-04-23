@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Physics Researcher</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Header Styles */
+        header {
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #eaecef;
+            margin-bottom: 30px;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #6c757d;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #24292e;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #586069;
+            margin-bottom: 15px;
+        }
+        
+        /* Navigation */
+        nav {
+            margin-bottom: 30px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #24292e;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover, nav ul li a.active {
+            border-bottom: 2px solid #0366d6;
+            color: #0366d6;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eaecef;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #24292e;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        /* Research Interests */
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .interest-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 300px;
+        }
+        
+        .interest-item h3 {
+            margin-bottom: 10px;
+            color: #0366d6;
+        }
+        
+        /* Publications */
+        .publication {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .publication h3 {
+            margin-bottom: 10px;
+        }
+        
+        .publication .authors {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .publication .journal {
+            color: #586069;
+            margin-bottom: 10px;
+        }
+        
+        .publication .abstract {
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .publication .links {
+            margin-top: 10px;
+        }
+        
+        .publication .links a {
+            margin-right: 15px;
+            display: inline-block;
+        }
+        
+        /* Team Section */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .team-member {
+            flex: 1 1 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #6c757d;
+        }
+        
+        .team-member h3 {
+            margin-bottom: 5px;
+        }
+        
+        .team-member .position {
+            color: #586069;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        /* Resources Section */
+        .resources-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .resource-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .resource-item h3 {
+            margin-bottom: 10px;
+            color: #0366d6;
+        }
+        
+        /* Contact Section */
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #0366d6;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: #024ea7;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            color: #586069;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .interests-container, .team-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="profile-pic">YN</div>
+            <h1>Your Name</h1>
+            <p class="title">Associate Professor of Physics</p>
+            <p>Department of Physics, University Name</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Welcome to my academic website. I am a physicist specializing in [Your Specialty]. I received my Ph.D. from [University] in [Year] and currently work as [Your Position] at [Your Institution].</p>
+                
+                <p>My work focuses on understanding [brief description of your research focus]. Throughout my career, I have been fascinated by [what motivates your research] and have contributed to various projects and publications in this field.</p>
+                
+                <p>When I'm not in the lab or classroom, I enjoy [personal interests or hobbies that you're comfortable sharing].</p>
+            </div>
+        </section>
+        
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="interests-container">
+                <div class="interest-item">
+                    <h3>Research Area 1</h3>
+                    <p>Describe your first major research interest here. What questions are you trying to answer? Why is this area important to physics and potentially to society?</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h3>Research Area 2</h3>
+                    <p>Describe your second major research interest. What methodologies do you use? What discoveries have you made or aim to make?</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h3>Research Area 3</h3>
+                    <p>Describe your third research interest. How does this connect to your other areas of research? What collaborations are involved?</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <div class="publication">
+                <h3>Title of Your Publication 1</h3>
+                <p class="authors">Your Name, Co-author Name, Another Co-author</p>
+                <p class="journal">Journal Name, Volume(Issue), Pages (Year)</p>
+                <p>Brief description of this publication and its significance.</p>
+                <div class="links">
+                    <a href="#" target="_blank">DOI</a>
+                    <a href="#" target="_blank">PDF</a>
+                    <a href="#" target="_blank">arXiv</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <h3>Title of Your Publication 2</h3>
+                <p class="authors">Co-author Name, Your Name, Other Co-authors</p>
+                <p class="journal">Journal Name, Volume(Issue), Pages (Year)</p>
+                <p>Brief description of this publication and its significance.</p>
+                <div class="links">
+                    <a href="#" target="_blank">DOI</a>
+                    <a href="#" target="_blank">PDF</a>
+                    <a href="#" target="_blank">arXiv</a>
+                </div>
+            </div>
+            
+            <div class="publication">
+                <h3>Title of Your Publication 3</h3>
+                <p class="authors">Your Name, Co-author Names</p>
+                <p class="journal">Journal Name, Volume(Issue), Pages (Year)</p>
+                <p>Brief description of this publication and its significance.</p>
+                <div class="links">
+                    <a href="#" target="_blank">DOI</a>
+                    <a href="#" target="_blank">PDF</a>
+                    <a href="#" target="_blank">arXiv</a>
+                </div>
+            </div>
+            
+            <p><a href="#" target="_blank">View Complete Publication List</a></p>
+        </section>
+        
+        <section id="team">
+            <h2>Research Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <div>TM</div>
+                    <h3>Team Member Name</h3>
+                    <p class="position">Ph.D. Student</p>
+                    <p>Brief description of their research and role in the team.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div>TM</div>
+                    <h3>Team Member Name</h3>
+                    <p class="position">Postdoctoral Researcher</p>
+                    <p>Brief description of their research and role in the team.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div>TM</div>
+                    <h3>Team Member Name</h3>
+                    <p class="position">Master's Student</p>
+                    <p>Brief description of their research and role in the team.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div>TM</div>
+                    <h3>Team Member Name</h3>
+                    <p class="position">Undergraduate Researcher</p>
+                    <p>Brief description of their research and role in the team.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Useful Resources</h2>
+            <div class="resources-list">
+                <div class="resource-item">
+                    <h3>Data Sets</h3>
+                    <p>Description of data sets relevant to your field that you've made available or want to share with others.</p>
+                    <a href="#" target="_blank">Access Data</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>Software Tools</h3>
+                    <p>Description of software, codes, or algorithms developed by your team.</p>
+                    <a href="#" target="_blank">GitHub Repository</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>Teaching Materials</h3>
+                    <p>Access to lecture notes, problem sets, or other teaching resources you've developed.</p>
+                    <a href="#" target="_blank">Access Materials</a>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>Recommended Reading</h3>
+                    <p>Books, papers, and other resources you recommend for those interested in your field.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> your.email@university.edu</p>
+                <p><strong>Office:</strong> Building Name, Room Number</p>
+                <p><strong>Address:</strong> Department of Physics, University Name, City, State/Province, Country, ZIP/Postal Code</p>
+                <p><strong>Office Hours:</strong> Days and Times</p>
+                
+                <div class="social-links">
+                    <a href="#" title="Google Scholar">GS</a>
+                    <a href="#" title="ORCID">OR</a>
+                    <a href="#" title="LinkedIn">LI</a>
+                    <a href="#" title="Twitter/X">X</a>
+                    <a href="#" title="GitHub">GH</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="current-year">2025</span> Your Name. Last updated: April 2025.</p>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
