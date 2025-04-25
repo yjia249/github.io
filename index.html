@@ -227,20 +227,21 @@
         
         /* Resources Section */
         .resources-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
         
         .resource-item {
             background-color: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
         }
         
         .resource-item h3 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #0366d6;
         }
         
@@ -351,16 +352,31 @@
             <div class="interests-container">
                 <div class="interest-item">
                     <h3>Active granular experiments and simulations</h3>
+                    <!-- Image placeholder -->
+                    <div style="height: 250px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; margin-bottom: 20px; border-radius: 5px;">
+                        <p>Image: Active Granular Systems</p>
+                        <!-- Replace with: <img src="active_granular.jpg" alt="Active Granular Systems" style="max-width: 100%; max-height: 250px; border-radius: 5px;"> -->
+                    </div>
                     <p>I am now collaborating with Yujie Wang, and have access to a range of powerful facilities such as vibrational platform, CT scanner, confocal microscope, AFM, etc. Currently I am interested in active granular systems, including active disks and active emulsions, where individual particles consume energy to generate motion or forces independent of thermal fluctuations. These systems offer fascinating experimental platforms to explore how self-propulsion and internal activity reshape our understanding of classic nonequilibrium phenomena. Phenomena such as yielding, aging, and memory effects may exhibit novel characteristics when energy input occurs at the particle scale rather than through external fields. Studying these systems is important because they bridge the gap between non-living matter and biological systems, potentially revealing universal principles governing collective behavior across scales. Furthermore, active granular materials could inspire innovative applications in soft robotics, self-healing materials, and programmable matter, where controlled energy dissipation and emergent organization can be harnessed for adaptive functionality. Understanding the fundamental physics of these active systems may ultimately provide insights into broader questions about self-organization, dissipative structures, and the thermodynamics of life itself.</p>
                 </div>
                 
                 <div class="interest-item">
                     <h3>Langevin dynamics simulations</h3>
+                    <!-- Image placeholder -->
+                    <div style="height: 250px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; margin-bottom: 20px; border-radius: 5px;">
+                        <p>Image: Langevin Dynamics Simulation</p>
+                        <!-- Replace with: <img src="langevin_dynamics.jpg" alt="Langevin Dynamics Simulation" style="max-width: 100%; max-height: 250px; border-radius: 5px;"> -->
+                    </div>
                     <p>I am interested in leveraging modified Langevin dynamics to explore complex systems beyond traditional equilibrium frameworks. By incorporating active forces at the particle level or implementing colored noise with temporal correlations, I investigate how these modifications fundamentally alter system behavior and emergent properties. This approach is particularly valuable because it bridges theoretical physics with real-world phenomena where perfect white noise assumptions break down. The introduction of active forces mimics biological entities that consume energy to generate motion, while colored noise better represents realistic environments with memory effects and temporal correlations. These modifications are significant as they can lead to counterintuitive phenomena such as noise-induced phase transitions, enhanced diffusion, and novel pattern formation that cannot emerge in classical systems. Understanding these dynamics has profound implications for soft matter physics, biophysics, and materials science, potentially enabling the design of responsive materials with programmable properties. Moreover, this work contributes to fundamental questions about the principles governing energy transduction and information processing in both living and synthetic active systems.</p>
                 </div>
                 
                 <div class="interest-item">
                     <h3>Special complex systems</h3>
+                    <!-- Image placeholder -->
+                    <div style="height: 250px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; margin-bottom: 20px; border-radius: 5px;">
+                        <p>Image: Complex Systems</p>
+                        <!-- Replace with: <img src="complex_systems.jpg" alt="Complex Systems" style="max-width: 100%; max-height: 250px; border-radius: 5px;"> -->
+                    </div>
                     <p>I am interested in extending statistical physics frameworks to diverse complex systems including deep neural networks, wildfires, earthquakes, economic markets, human crowds, and social networks. Currently, I'm collaborating on molecular dynamics simulations to model deep neural networks, investigating how principles such as phase transitions, criticality, and emergent behavior manifest in these computational systems. This cross-disciplinary approach is profoundly important because it reveals universal organizing principles that transcend specific domains, suggesting that seemingly unrelated complex systems may operate under similar mathematical rules. By applying concepts like symmetry breaking, renormalization group theory, and universality classes to these diverse systems, we can identify common patterns in how information propagates, how collective behaviors emerge from individual interactions, and how systems self-organize at the edge of chaos. These insights are not merely academic—they could lead to breakthroughs in network robustness, prediction of extreme events, and optimization of artificial intelligence architectures. Furthermore, uncovering these shared principles advances our fundamental understanding of complexity itself, potentially unifying disparate fields under a common theoretical framework and revealing deeper connections between natural, social, and technological systems.</p>
                 </div>
             </div>
@@ -412,32 +428,44 @@
             <h2>Research Team</h2>
             <div class="team-container">
                 <div class="team-member">
-                    <div>TM</div>
-                    <h3>Team Member Name</h3>
+                    <div>SW</div>
+                    <h3>Siqi Wang</h3>
                     <p class="position">Ph.D. Student</p>
-                    <p>Brief description of their research and role in the team.</p>
+                    <p>Interested in active emulsion and bacteria experiment.</p>
                 </div>
                 
                 <div class="team-member">
-                    <div>TM</div>
-                    <h3>Team Member Name</h3>
-                    <p class="position">Postdoctoral Researcher</p>
-                    <p>Brief description of their research and role in the team.</p>
+                    <div>GJ</div>
+                    <h3>Ge Ji</h3>
+                    <p class="position">Master Student</p>
+                    <p>Interested in crumpled sheet and cyclic shear granular system experiment.</p>
                 </div>
                 
                 <div class="team-member">
-                    <div>TM</div>
-                    <h3>Team Member Name</h3>
-                    <p class="position">Master's Student</p>
-                    <p>Brief description of their research and role in the team.</p>
+                    <div>GL</div>
+                    <h3>Gen Li</h3>
+                    <p class="position">Master Student</p>
+                    <p>Interested in vibration bidisperse granular beads experiment.</p>
                 </div>
                 
                 <div class="team-member">
-                    <div>TM</div>
-                    <h3>Team Member Name</h3>
-                    <p class="position">Undergraduate Researcher</p>
-                    <p>Brief description of their research and role in the team.</p>
+                    <div>XX</div>
+                    <h3>Xinzhu Xie</h3>
+                    <p class="position">Master Student</p>
+                    <p>Interested in active granular disk experiment.</p>
                 </div>
+                
+                <div class="team-member">
+                    <div>TS</div>
+                    <h3>Tong Sun</h3>
+                    <p class="position">Master Student</p>
+                    <p>Interested in active granular disk experiment.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background-color: #f0f7ff; border-radius: 5px; text-align: center;">
+                <h3 style="margin-bottom: 10px;">Join Our Team</h3>
+                <p>I welcome collaborations and students interested in these research directions to join the team. If you're passionate about soft matter physics, active systems, or complex systems, please reach out!</p>
             </div>
         </section>
         
@@ -445,26 +473,33 @@
             <h2>Useful Resources</h2>
             <div class="resources-list">
                 <div class="resource-item">
-                    <h3>Data Sets</h3>
-                    <p>Description of data sets relevant to your field that you've made available or want to share with others.</p>
-                    <a href="#" target="_blank">Access Data</a>
-                </div>
-                
-                <div class="resource-item">
-                    <h3>Software Tools</h3>
-                    <p>Description of software, codes, or algorithms developed by your team.</p>
-                    <a href="#" target="_blank">GitHub Repository</a>
-                </div>
-                
-                <div class="resource-item">
-                    <h3>Teaching Materials</h3>
-                    <p>Access to lecture notes, problem sets, or other teaching resources you've developed.</p>
-                    <a href="#" target="_blank">Access Materials</a>
+                    <h3>Software Tools for Physics Research</h3>
+                    <p>Here are some useful open-source software tools for molecular dynamics simulations and data visualization:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li><strong>RUMD</strong> - Roskilde University Molecular Dynamics package, optimized for GPU acceleration.</li>
+                        <li><strong>LAMMPS</strong> - Large-scale Atomic/Molecular Massively Parallel Simulator, highly flexible for various simulation types.</li>
+                        <li><strong>GROMACS</strong> - Versatile package designed for biomolecular systems but useful for many soft matter applications.</li>
+                        <li><strong>ESPResSo</strong> - Extensible Simulation Package for Research on Soft Matter, specializing in coarse-grained models.</li>
+                        <li><strong>HOOMD-blue</strong> - Highly Optimized Object-oriented Many-particle Dynamics, GPU-accelerated for large systems.</li>
+                        <li><strong>OVITO</strong> - Open Visualization Tool, for analyzing and visualizing particle-based simulation data.</li>
+                        <li><strong>VMD</strong> - Visual Molecular Dynamics, visualization program for displaying and analyzing trajectory data.</li>
+                        <li><strong>ParaView</strong> - Open-source, multi-platform data analysis and visualization application.</li>
+                        <li><strong>MDAnalysis</strong> - Python library for analyzing molecular dynamics trajectories.</li>
+                        <li><strong>Freud</strong> - Python library for analyzing particle simulation data, with a focus on soft matter systems.</li>
+                    </ul>
                 </div>
                 
                 <div class="resource-item">
                     <h3>Recommended Reading</h3>
-                    <p>Books, papers, and other resources you recommend for those interested in your field.</p>
+                    <p>Key review papers in soft matter physics and related fields:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li>"Mechanical Memories in Solids, from Disorder to Design"</li>
+                        <li>"Theoretical perspective on the glass transition and amorphous materials"</li>
+                        <li>"Yielding and plasticity in amorphous solids"</li>
+                        <li>"Deformation and flow of amorphous solids: An updated review of mesoscale elastoplastic models"</li>
+                        <li>"Yield Stress Materials in Soft Condensed Matter"</li>
+                        <li>"Soft matter physics of the ground beneath our feet"</li>
+                    </ul>
                 </div>
             </div>
         </section>
